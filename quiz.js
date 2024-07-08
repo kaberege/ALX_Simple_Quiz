@@ -13,7 +13,7 @@ function checkAnswer() {
     const myFeedback = document.getElementById("feedback");
     let checkedRadio = document.querySelector('input[name="quiz"]:checked');
     let userAnswer = checkedRadio.value;
-    if (checkedRadio.checked == true && userAnswer == correctAnswer) {
+    if (userAnswer == correctAnswer) {
         myFeedback.innerHTML = "Correct! Well done.";
     } else {
         myFeedback.textContent = "That's incorrect. Try again!";
